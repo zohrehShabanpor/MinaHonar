@@ -1,0 +1,45 @@
+
+::selection {
+	color: #54BAB9;
+	background-color: #393E46
+}
+
+::-webkit-scrollbar {
+	width: 7px;
+	background: var(--white2)
+}
+
+::-webkit-scrollbar-thumb {
+	width: 3px;
+	border-radius: 4px;
+	background: var(--black2)
+}
+
+::-webkit-scrollbar-track-piece:start {
+	background: 0 0
+}
+
+::-webkit-scrollbar-track-piece:end {
+	background: 0 0
+}
+
+@media screen and (max-width: 992px) {
+	.slider-first-button, .slider-second-button {
+		height: 13px
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.col-xs-6 {
+		flex: 0 0 auto;
+		width: 50% !important
+	}
+
+	.d-xs-none, .slider-first-button, .slider-second-button {
+		display: none !important
+	}
+
+	::-webkit-scrollbar {
+		display: none
+	}
+}

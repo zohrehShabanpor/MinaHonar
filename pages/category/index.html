@@ -1,0 +1,2093 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>میناهنر - دسته بندی</title>
+	<style>
+		header {
+			position: relative;
+		}
+
+		body {
+			background-color: #FFFFFF !important;
+			font-weight: 300 !important;
+			direction: rtl !important;
+			margin: 0 !important;
+			overflow-x: hidden !important;
+			font-family: YekanBakh, serif !important;
+		}
+
+		main {
+			padding: 70px 65px 50px;
+			position: relative;
+		}
+
+		nav {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			height: 190px;
+			position: relative;
+			overflow: hidden !important;
+
+			background-color: transparent;
+
+			z-index: 4;
+		}
+
+		a, a:link, a:hover, a:active {
+			text-decoration: none;
+			color: #ffffff !important;
+			cursor: pointer;
+		}
+
+		.nav-container-1 {
+			height: 80px;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0 55px;
+			position: relative;
+			z-index: 6;
+			box-shadow: 0 14px 34px rgba(0, 0, 0, 0.13);
+		}
+
+		.nav-container-2 {
+			width: 230px;
+			text-align: end;
+		}
+
+		.nav-container-3 {
+			background-color: #54BAB9;
+			width: calc(100% - 100px);
+			height: 55px;
+			border-radius: 0 0 90px 90px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			color: #FFFFFF;
+			padding: 0 80px;
+		}
+
+		.nav-container-4 {
+			border-bottom: solid 2px #8E8E8E;
+			padding-bottom: 7px;
+			width: 230px;
+			display: flex;
+		}
+
+		.nav-container-5 {
+			display: flex;
+			column-gap: 85px;
+			font-weight: 500;
+			font-family: VazirFd, serif;
+		}
+
+		.nav-image-1 {
+			height: 60px;
+		}
+
+		.nav-image-2 {
+		}
+
+		.nav-image-3 {
+			position: absolute;
+			width: 400px;
+			left: calc(50% - 200px);
+			top: 80px;
+			z-index: -30;
+		}
+
+		.nav-image-4 {
+			position: absolute;
+			width: 80px;
+			left: calc(50% - 45px);
+			top: 90px;
+		}
+
+		.nav-input-1 {
+			border: none;
+			outline: none;
+			flex-grow: 1;
+			font-size: 12px;
+			font-family: VazirFd, serif;
+		}
+
+		/*		First Section		*/
+
+		.first-section {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			row-gap: 75px;
+		}
+
+		.first-section-container-1 {
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+
+			padding-left: 50px;
+		}
+
+		.first-section-container-2 {
+			width: 70%;
+
+			padding: 30px 40px 50px 40px;
+
+			background: #ffffff;
+			border-radius: 20px;
+			box-shadow: 0 13px 72px rgba(0, 0, 0, 0.1);
+		}
+
+		.first-section-container-3 {
+			margin-bottom: 70px;
+		}
+
+		.first-section-container-4 {
+			width: 100%;
+			text-align: center;
+		}
+
+		.first-section-container-5 {
+			display: inline-flex;
+			column-gap: 12px;
+		}
+
+		.first-section-title-1 {
+			font-weight: 950;
+			font-size: 32px;
+			color: #555555;
+		}
+
+		.first-section-span-2 {
+			background-color: #54BAB9 !important;
+		}
+
+		.first-section-span-1 {
+			display: block;
+
+			font-weight: 700;
+			font-size: 16px;
+
+			color: #555555;
+
+		}
+
+		.first-section-span-2 img {
+			filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(286deg) brightness(153%) contrast(103%);
+
+			height: 18px;
+		}
+
+		.first-section-span-3, .first-section-span-2 {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			width: 43px;
+			height: 43px;
+
+			font-family: VazirFd, serif;
+			font-weight: 900;
+			font-size: 16px;
+
+			cursor: pointer;
+			color: #222831;
+			border-radius: 30px;
+			background-color: #E7E7E7;
+		}
+
+		.first-section-span-4 {
+			display: inline-flex;
+			align-items: center;
+
+			width: 62px;
+			height: 30px;
+
+			padding: 0 5px;
+
+			background: #E7E7E7;
+			border-radius: 40px;
+		}
+
+		.first-section-span-5 {
+			width: 24px;
+			height: 24px;
+
+			cursor: pointer;
+			background: #ffffff;
+			border-radius: 50px;
+		}
+
+		.first-section-span-active {
+			background-color: #E9DAC1;
+			color: #ffffff;
+		}
+
+
+		.first-section-item-container-1 {
+			position: relative;
+			z-index: 5;
+
+		}
+
+		.first-section-item-container-1 * {
+			z-index: 5;
+		}
+
+		.first-section-item-container-2 {
+			display: flex;
+			flex-direction: column;
+			align-items: end;
+			row-gap: 10px;
+			padding: 20px;
+			margin-bottom: 40px;
+			z-index: 5;
+
+			border-radius: 12px;
+			background-color: #E5E5E5;
+		}
+
+		.first-section-item-container-1:nth-last-child(6) .first-section-item-container-2,
+		.first-section-item-container-1:nth-last-child(5) .first-section-item-container-2,
+		.first-section-item-container-1:nth-last-child(4) .first-section-item-container-2 {
+			margin-bottom: 0;
+		}
+
+		.first-section-item-span-1 {
+			font-family: VazirFd, serif;
+			font-weight: 900;
+			font-size: 15px;
+			white-space: nowrap;
+			display: flex;
+			align-items: center;
+			flex-direction: row-reverse;
+			column-gap: 3px;
+		}
+
+		.first-section-item-span-2 {
+			font-weight: 700;
+			font-size: 10px;
+		}
+
+		.first-section-item-button {
+			flex-grow: 0.7;
+			padding: 6px 0;
+
+			font-family: VazirFd, serif;
+			font-weight: 700;
+			font-size: 12px;
+			text-align: center;
+
+			border: none;
+			background-color: #DAB88B;
+			color: #ffffff;
+			border-radius: 4px;
+		}
+
+		.first-section-item-image {
+			object-fit: contain;
+			width: 100%;
+			height: 100%;
+		}
+
+		.first-section-item-container-4 {
+			width: 100%;
+			padding: 10px;
+			border-radius: 12px;
+			background-color: #ffffff;
+			margin-bottom: 10px;
+			position: relative;
+		}
+
+
+		.first-section-item-span-3 {
+			font-family: VazirFd, serif;
+			font-weight: 900;
+			font-size: 14px;
+			width: 100%;
+			color: #222831;
+		}
+
+		.first-section-item-2-container, .first-section-item-3-container {
+			width: 100%;
+
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 20px;
+
+			margin-bottom: 30px;
+			padding: 20px 30px;
+
+			color: #222831;
+			background: #ffffff;
+			box-shadow: 0 13px 72px rgba(0, 0, 0, 0.07);
+			border-radius: 23px;
+		}
+
+		.first-section-item-2-container span img, .first-section-item-3-container span img {
+			margin-left: 10px;
+		}
+
+		.first-section-item-2-container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.first-section-item-3-container {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.first-section-item-3-container-2 {
+			display: flex;
+			column-gap: 20px;
+		}
+
+		.first-section-item-3-header {
+			display: flex;
+			justify-content: space-between;
+
+			width: 100%;
+		}
+
+		.first-section-item-3-collapse {
+			margin-top: 20px;
+			padding: 30px 5px 10px;
+
+			font-family: Poppins, serif;
+			font-size: 14px;
+
+			color: #444444;
+			border-top: 0.5px solid rgba(200, 201, 204, 0.31);
+		}
+
+		.first-section-item-3-container:nth-last-child(2) .first-section-item-3-collapse,
+		.first-section-item-3-container:nth-last-child(1) .first-section-item-3-collapse {
+			font-family: VazirFd, serif;
+		}
+
+
+		.first-section-item-3-collapse ul {
+			list-style: none;
+			padding: 0;
+			margin-bottom: 50px;
+		}
+
+		.first-section-item-3-collapse li {
+			display: flex;
+			align-items: center;
+
+			column-gap: 10px;
+
+			margin-bottom: 22px;
+		}
+
+		.first-section-item-3-collapse li i {
+			font-size: 20px;
+			color: #E9E9E9;
+		}
+
+		.first-section-item-3-button {
+			padding: 6px 25px;
+
+			font-size: 14px;
+
+			position: relative;
+
+			color: #ffffff;
+			border: none;
+			background: #C9C9C9;
+			border-radius: 4px;
+		}
+
+		.first-section-item-3-icon-2 {
+			cursor: pointer;
+			filter: invert(66%) sepia(8%) saturate(2416%) hue-rotate(130deg) brightness(99%) contrast(88%);
+		}
+
+		.first-section-item-3-icon-3 {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			position: absolute;
+			top: -5px;
+			right: -5px;
+			transform: rotate(45deg);
+
+			font-size: 10px;
+
+			width: 16px;
+			height: 16px;
+
+			background-color: #54BAB9;
+			border-radius: 20px;
+		}
+
+		.global-1-item-image-2, .global-1-item-image-3 {
+			background-color: #DAB88B !important;
+		}
+
+		.first-section-container-11 {
+			display: flex;
+			justify-content: space-around;
+			position: absolute;
+			width: 63% !important;
+			height: 50% !important;
+			object-fit: contain!important;
+			top: 130px;
+			left: 65px;
+			z-index: 0;
+		}
+		.first-section-container-11 .dashed-line {
+			background-image: url("../../src/assets/images/image22.png");
+			width:1px;
+			height: 100%;
+		}
+
+		.first-section-container-12 {
+			top: 845px;
+			height: 440px;
+			display: none;
+		}
+
+
+		/*		Mobile		*/
+		.first-section-container-6 img, .first-section-container-7 {
+			display: none;
+		}
+
+		.mobile {
+			display: none;
+		}
+
+		@media screen and (max-width: 1400px) {
+			nav {
+				height: 170px;
+			}
+
+			.nav-container-1 {
+				height: 70px;
+				padding: 0 48px;
+			}
+
+			.nav-container-2 {
+				width: 210px;
+			}
+
+			.nav-container-3 {
+				background-color: #54BAB9;
+				height: 45px;
+				padding: 0 70px;
+			}
+
+			.nav-container-4 {
+				width: 210px;
+			}
+
+			.nav-container-5 {
+				column-gap: 80px;
+			}
+
+			.nav-image-1 {
+				height: 50px;
+			}
+
+			.nav-image-2 {
+				width: 24px;
+			}
+
+			.nav-image-3 {
+				width: 360px;
+				left: calc(50% - 180px);
+				top: 70px;
+			}
+
+			.nav-image-4 {
+				width: 70px;
+				left: calc(50% - 35px);
+				top: 80px;
+			}
+
+			/*		First Section		*/
+			.first-section-item-container-2 {
+				padding: 15px;
+				margin-bottom: 35px;
+			}
+
+			.first-section-item-span-3 {
+				font-size: 12px;
+			}
+
+			.first-section-item-button {
+				padding: 6px 0;
+				font-size: 10px;
+			}
+
+			.first-section-item-span-1 {
+				font-size: 11px;
+			}
+
+			.first-section-item-span-2 {
+				font-size: 8px;
+			}
+
+			.first-section-container-11 {
+				height: 42% !important;
+			}
+		}
+
+		@media screen and (max-width: 1200px) {
+			main {
+				padding-top: 30px;
+			}
+
+			nav {
+				height: 150px;
+			}
+
+			.nav-container-1 {
+				height: 60px;
+				padding: 0 48px;
+			}
+
+			.nav-container-2 {
+				width: 200px;
+			}
+
+			.nav-container-3 {
+				height: 40px;
+			}
+
+			.nav-container-4 {
+				width: 200px;
+			}
+
+			.nav-container-5 {
+				column-gap: 75px;
+				font-size: 13px;
+			}
+
+			.nav-image-1 {
+				height: 40px;
+			}
+
+			.nav-image-2 {
+				width: 20px;
+			}
+
+			.nav-image-3 {
+				width: 300px;
+				left: calc(50% - 150px);
+				top: 59px;
+			}
+
+			.nav-image-4 {
+				width: 60px;
+				left: calc(50% - 30px);
+				top: 65px;
+			}
+
+			.nav-image-5 {
+				width: 20px;
+			}
+
+			.nav-input-1 {
+				font-size: 10px;
+			}
+
+			/*		First Section		*/
+			.first-section-container-1 {
+				padding-left: 30px;
+			}
+
+			.first-section-container-2 {
+				flex-grow: 1;
+				padding: 30px 20px 40px;
+			}
+
+			.first-section-item-2-container, .first-section-item-3-container {
+				font-size: 16px;
+				margin-bottom: 20px;
+				padding: 15px 20px;
+			}
+
+			.first-section-item-container-1 {
+				padding: 0 7px !important;
+
+			}
+
+			.first-section-item-container-2 {
+				padding: 12px;
+			}
+
+
+			.first-section-item-span-1 {
+				font-size: 14px;
+
+			}
+
+			.first-section-item-span-2 {
+				font-size: 9px;
+
+			}
+
+			.first-section-item-span-3 {
+				font-size: 15px;
+			}
+
+			.first-section-container-11 {
+				height: 49% !important;
+			}
+		}
+
+		@media screen and (max-width: 992px) {
+			main {
+				padding: 30px 50px 40px;
+			}
+
+			nav {
+				height: 125px;
+			}
+
+			.nav-container-1 {
+				height: 50px;
+				padding: 0 40px;
+			}
+
+			.nav-container-2 {
+				width: 180px;
+			}
+
+			.nav-container-3 {
+				height: 35px;
+			}
+
+			.nav-container-4 {
+				width: 180px;
+			}
+
+			.nav-container-5 {
+				column-gap: 55px;
+				font-size: 12px;
+			}
+
+			.nav-image-1 {
+				height: 35px;
+			}
+
+			.nav-image-2 {
+				width: 18px;
+			}
+
+			.nav-image-3 {
+				width: 280px;
+				left: calc(50% - 140px);
+				top: 50px;
+			}
+
+			.nav-image-4 {
+				width: 54px;
+				left: calc((100% - 54px) / 2);
+				top: 60px;
+			}
+
+			.nav-image-5 {
+				width: 18px;
+			}
+
+			/*		First Section		*/
+			.first-section-container-1 {
+				display: none;
+			}
+
+			.first-section-container-2 {
+				width: 100%;
+
+				padding: 30px 20px 50px 20px;
+			}
+
+			.first-section-container-6 {
+				display: flex;
+				justify-content: space-between;
+				align-items: start;
+			}
+
+			.first-section-container-6 img {
+				display: inline;
+				width: 25px;
+				margin-top: 3px;
+			}
+
+			.first-section-item-span-3 {
+				font-size: 13px;
+			}
+
+			.first-section-item-container-2 {
+				margin-bottom: 60px;
+				border-radius: 6px;
+			}
+
+			.global-1-item-container-4 {
+				column-gap: 10px;
+			}
+
+			.first-section-item-span-1 {
+				font-size: 14px;
+			}
+
+			.first-section-item-span-2 {
+				font-size: 10px;
+			}
+
+			.first-section-item-button {
+				font-size: 10px;
+				flex-grow: 1;
+
+				padding: 7px 0;
+			}
+
+			.first-section-container-11 {
+				height: 49% !important;
+				width: 85% !important;
+			}
+
+			.first-section-container-11  :first-child{
+				display: none;
+			}
+		}
+
+		@media screen and (max-width: 768px) {
+			main {
+				padding: 10px 30px 40px;
+			}
+
+			nav {
+				height: 110px;
+			}
+
+			.nav-container-1 {
+				height: 45px;
+				padding: 0 30px;
+			}
+
+			.nav-container-2 {
+				width: 150px;
+			}
+
+			.nav-container-3 {
+				height: 30px;
+				padding: 0 30px;
+			}
+
+			.nav-container-4 {
+				width: 150px;
+				padding-bottom: 4px;
+			}
+
+			.nav-container-5 {
+				column-gap: 25px;
+				font-size: 10px;
+			}
+
+			.nav-image-1 {
+				height: 30px;
+			}
+
+			.nav-image-2 {
+				width: 16px;
+			}
+
+			.nav-image-3 {
+				width: 240px;
+				left: calc(50% - 120px);
+				top: 45px;
+			}
+
+			.nav-image-4 {
+				width: 45px;
+				left: calc((100% - 45px) / 2);
+				top: 50px;
+			}
+
+			.nav-image-5 {
+				width: 16px;
+			}
+
+			.nav-input-1 {
+				font-size: 8px;
+			}
+
+			/*		First Section		*/
+			.first-section {
+				row-gap: 50px;
+			}
+
+			.first-section-container-2 {
+				padding: 30px 10px 50px 10px;
+			}
+
+			.first-section-container-3 {
+				margin-bottom: 50px;
+			}
+
+			.first-section-title-1 {
+				font-size: 20px;
+			}
+
+			.first-section-span-1 {
+				font-size: 12px;
+			}
+
+			.first-section-span-3, .first-section-span-2 {
+				width: 30px;
+				height: 30px;
+				font-size: 10px;
+			}
+
+			.first-section-span-2 img {
+				height: 10px;
+			}
+
+
+			.first-section-item-container-2 {
+				height: 170px;
+				margin-bottom: 30px;
+			}
+
+
+			.first-section-item-container-4 {
+				height: 100px;
+				padding: 6px;
+				margin: 0;
+			}
+
+			.first-section-item-span-1 {
+				font-size: 9px;
+			}
+
+			.first-section-item-span-2 {
+				font-size: 6px;
+			}
+
+			.first-section-item-span-3 {
+				font-size: 10px;
+			}
+
+			.first-section-item-button {
+				padding: 4px 0;
+				font-size: 7px;
+			}
+
+			.global-1-item-container-4 {
+				column-gap: 5px;
+			}
+
+			.first-section-container-11 {
+				height: 45% !important;
+				width: 90% !important;
+				left:25px;
+				top:80px;
+			}
+		}
+
+		@media screen and (max-width: 576px) {
+			nav {
+				height: 90px;
+			}
+
+			.nav-container-1 {
+				height: 40px;
+				padding: 0 25px;
+			}
+
+			.nav-container-2 {
+				width: 110px;
+			}
+
+			.nav-container-3 {
+				padding: 0 25px;
+			}
+
+			.nav-container-4 {
+				width: 110px;
+				padding-bottom: 3px;
+				border-width: 1px;
+			}
+
+			.nav-container-5 {
+				column-gap: 15px;
+				font-size: 9px;
+			}
+
+			.nav-image-1 {
+				height: 25px;
+			}
+
+			.nav-image-2 {
+				width: 12px;
+			}
+
+			.nav-image-3 {
+				width: 180px;
+				left: calc(50% - 90px);
+				top: 40px;
+			}
+
+			.nav-image-4 {
+				width: 35px;
+				left: calc((100% - 35px) / 2);
+				top: 45px;
+			}
+
+			.nav-image-5 {
+				width: 12px;
+			}
+
+			.nav-input-1 {
+				font-size: 7px;
+			}
+
+			/*		First Section		*/
+			.first-section {
+				row-gap: 40px;
+			}
+
+			.first-section-container-2 {
+				padding: 20px 10px 30px 10px;
+			}
+
+			.first-section-container-6 img {
+				width: 15px;
+			}
+
+			.first-section-title-1 {
+				font-size: 18px;
+			}
+
+			.first-section-span-1 {
+				font-size: 10px;
+			}
+
+
+			.first-section-item-container-2 {
+				height: 140px;
+				row-gap: 5px;
+				padding: 5px 6px 10px;
+				margin-bottom: 20px;
+			}
+
+			.first-section-item-container-4 {
+				height: 125px;
+			}
+
+			.first-section-item-span-1 {
+				font-size: 9px;
+			}
+
+			.first-section-item-span-2 {
+				font-size: 6px;
+			}
+
+			.first-section-item-span-3 {
+				font-size: 8px;
+			}
+
+			.first-section-item-button {
+				padding: 6px 0;
+				font-size: 6px;
+			}
+
+			.first-section-item-image {
+				height: 70px;
+				padding: 5px 0 0;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			.mobile {
+				display: inline;
+			}
+
+			main {
+				padding: 20px 0 0;
+				overflow-x: hidden;
+			}
+
+			body {
+				background-color: #FFFFFF !important;
+			}
+
+			nav {
+				height: 150px;
+			}
+
+			.nav-container-1 {
+				justify-content: space-between;
+				flex-direction: row-reverse;
+				padding: 0 22px;
+				height: 75px;
+				position: relative;
+			}
+
+			.nav-container-3 {
+				width: calc(100% - 80px);
+				height: 45px;
+				border-radius: 0 0 70px 70px;
+			}
+
+			.nav-image-1 {
+				position: absolute;
+				width: 50px;
+				height: fit-content;
+				left: calc(50% - 25px);
+				bottom: 5px;
+				object-fit: contain;
+			}
+
+			.nav-container-6 {
+				display: flex;
+				flex-direction: row-reverse;
+				align-items: center;
+				column-gap: 24px;
+			}
+
+			.nav-image-3 {
+				width: 300px;
+				left: calc(50% - 150px);
+				top: 75px;
+			}
+
+			.nav-image-4 {
+				width: 60px;
+				left: calc(50% - 30px);
+				top: 85px;
+			}
+
+			/*		First Section		*/
+			.first-section-container-2 {
+				padding: 0 20px 0;
+				box-shadow: none;
+				border-radius: 0;
+			}
+
+			.first-section-container-3 {
+				display: none;
+			}
+
+			.first-section-container-7 {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+
+				padding: 0 25px;
+
+				width: 100%;
+				position: relative;
+			}
+
+			.first-section-container-8 {
+				display: flex;
+				flex-direction: column;
+				z-index: 100;
+				background-color: white;
+			}
+
+			.first-section-container-9 {
+				display: flex;
+				column-gap: 12px;
+			}
+
+			.first-section-container-9 img {
+				width: 18px;
+			}
+
+
+			.first-section-title-2 {
+				font-weight: 950;
+				font-size: 22px;
+
+				color: #222831;
+			}
+
+			.first-section-span-6 {
+				margin-top: -5px;
+
+				font-weight: 700;
+				font-size: 14px;
+
+				color: #9A9A9A;
+			}
+
+			.first-section-item-container-2 {
+				flex-direction: column;
+				height: fit-content;
+
+				padding: 20px 17px 15px;
+
+				margin-bottom: 15px;
+			}
+
+
+			.first-section-item-container-4 {
+				position: relative;
+				padding: 10px 12px;
+				margin-bottom: 5px;
+			}
+
+			.first-section-item-span-1 {
+				column-gap: 5px;
+				background-color: #FFFFFF;
+				padding: 4px 6px;
+				border-radius: 4px;
+				font-size: 14px;
+			}
+
+			.first-section-item-span-2 {
+				font-size: 12px;
+			}
+
+			.first-section-item-span-3 {
+				font-size: 15px;
+			}
+
+
+			.first-section-item-button {
+				flex-grow: 0;
+				width: 26px;
+				height: 26px;
+
+				background-image: url("../../src/assets/icons/shopping-cart3.svg");
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 18px;
+			}
+
+			.first-section-item-image {
+				height: 100%;
+				padding: 0;
+				margin-bottom: 10px;
+			}
+
+			.first-section-span-2 {
+				background-color: #292D32 !important;
+			}
+
+			.first-section-span-active {
+				background-color: #51B3B2;
+				color: #ffffff;
+			}
+
+			.first-section-container-11 {
+				height: 58% !important;
+				width: 100% !important;
+				left:0;
+				top:10px;
+			}
+
+			.first-section-container-11  :first-child{
+				display: block;
+			}
+
+			.nav-container-4, .nav-container-2, .nav-container-3 * {
+				display: none;
+			}
+		}
+
+		@media screen and (max-width: 400px) {
+			nav {
+				height: 130px;
+			}
+
+			.nav-container-1 {
+				padding: 0 20px;
+				height: 65px;
+			}
+
+			.nav-container-3 {
+				width: calc(100% - 70px);
+				height: 40px;
+			}
+
+			.nav-image-1 {
+				width: 44px;
+				left: calc(50% - 22px);
+			}
+
+			.nav-container-6 {
+				column-gap: 16px;
+			}
+
+			.nav-image-3 {
+				width: 260px;
+				left: calc(50% - 130px);
+				top: 64px;
+			}
+
+			.nav-image-4 {
+				width: 50px;
+				left: calc(50% - 25px);
+				top: 75px;
+			}
+
+			.nav-image-6, .nav-image-7, .nav-image-8 {
+				width: 20px;
+				height: 20px;
+			}
+
+			/*		First Section		*/
+			.first-section-container-2 {
+				padding: 0 20px 0;
+			}
+
+			.first-section-title-2 {
+				font-size: 18px;
+			}
+
+			.first-section-span-3, .first-section-span-2 {
+				width: 26px;
+				height: 26px;
+				font-size: 9px;
+			}
+
+			.first-section-span-6 {
+				font-size: 12px;
+			}
+
+			.first-section-item-container-4 {
+				margin-bottom: 4px;
+				padding: 5px;
+			}
+
+
+			.first-section-item-span-1 {
+				font-size: 10px;
+			}
+
+			.first-section-item-span-2 {
+				font-size: 8px;
+			}
+
+			.first-section-item-span-3 {
+				font-size: 11px;
+			}
+
+
+		}
+
+		@media screen and (max-width: 320px) {
+			nav {
+				height: 105px;
+			}
+
+			.nav-container-1 {
+				height: 55px;
+			}
+
+			.nav-container-3 {
+				width: calc(100% - 40px);
+				height: 35px;
+			}
+
+			.nav-image-1 {
+				width: 30px;
+				left: calc(50% - 15px);
+			}
+
+			.nav-container-6 {
+				column-gap: 10px;
+			}
+
+			.nav-image-3 {
+				width: 200px;
+				left: calc(50% - 100px);
+				top: 54px;
+			}
+
+			.nav-image-4 {
+				width: 40px;
+				left: calc(50% - 20px);
+				top: 60px;
+			}
+
+			.nav-image-6, .nav-image-7, .nav-image-8 {
+				width: 15px;
+				height: 15px;
+			}
+
+		}
+	</style>
+	<link rel="preload"
+		  href="../../src/font/fonts.css"
+		  as="style"
+		  onload="this.rel='stylesheet'"/>
+	<link rel="preload"
+		  href="style.css"
+		  as="style"
+		  onload="this.rel='stylesheet'"/>
+	<link rel="preload"
+		  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+		  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"
+		  as="style"
+		  onload="this.rel='stylesheet'"/>
+	<link rel="prefetch"
+		  href="../../public/Logo.png"
+		  sizes="32x32"
+		  onload="this.rel='icon'">
+	<link rel="prefetch"
+		  href="../../public/Logo.png"
+		  sizes="32x32"
+		  onload="this.rel='apple-touch-icon'">
+</head>
+<body>
+<header>
+	<nav id="nav">
+		<div class="nav-container-1">
+			<div class="nav-container-4">
+				<input placeholder="جستجو کنید ...." class="nav-input-1"/>
+				<img class="nav-image-5" src="../../src/assets/icons/search-normal.svg"/>
+			</div>
+			<img class="nav-image-1" src="../../src/assets/images/image6.png" alt="">
+			<div class="nav-container-2">
+				<img class="nav-image-2" src="../../src/assets/icons/shopping-cart.svg" alt="">
+			</div>
+			<div class="nav-container-6 mobile">
+				<img class="nav-image-6" src="../../src/assets/icons/shopping-cart2.svg" alt="">
+				<img class="nav-image-7" src="../../src/assets/icons/search-normal2.svg" alt="">
+			</div>
+			<img class="nav-image-8 mobile" src="../../src/assets/icons/menu.svg" alt="">
+			<img class="nav-image-3" src="../../src/assets/images/image10.png" alt="">
+			<img class="nav-image-4" src="../../src/assets/images/image5.png" alt="">
+		</div>
+		<div class="nav-container-3">
+			<span class="nav-container-5">
+				<a href="../../index.html">صفحه اصلی</a>
+				<a href="index.html">محصولات</a>
+			</span>
+			<span class="nav-container-5">
+				<a>تماس با ما</a>
+				<a>درباره ما</a>
+			</span>
+		</div>
+	</nav>
+</header>
+<main>
+	<section class="first-section">
+		<div class="first-section-container-1">
+			<div class="first-section-item-2-container">
+				<span>
+					<img src="../../src/assets/icons/setting-4.svg" alt="">
+					فقط کالا های موجود
+				</span>
+				<span id="switch-1" class="first-section-span-4">
+					<span onclick="switchInput('switch-1')" class="first-section-span-5">
+					</span>
+				</span>
+			</div>
+			<div class="first-section-item-3-container">
+				<div class="first-section-item-3-header">
+					<span>
+						<img src="../../src/assets/icons/category.svg" alt="">
+						دسته بندی
+					</span>
+					<img src="../../src/assets/icons/arrow-down.svg" alt="" class="first-section-item-3-icon-2"
+						 data-bs-toggle="collapse" aria-expanded="false"
+						 aria-controls="category-1" data-bs-target="#category-1"/>
+				</div>
+				<div class="first-section-item-3-collapse collapse" id="category-1">
+					<ul>
+						<li>
+							<i class="fas fa-solid fa-square"></i>
+							LOMVUM
+						</li>
+						<li>
+							<i class="fas fa-solid fa-square"></i>
+							LOMVUM
+						</li>
+						<li>
+							<i class="fas fa-solid fa-square"></i>
+							LOMVUM
+						</li>
+					</ul>
+					<div class="first-section-item-3-container-2">
+						<button class="first-section-item-3-button">
+							<span class="first-section-item-3-icon-3">+</span>
+							LOMVUM
+						</button>
+						<button class="first-section-item-3-button">
+							<span class="first-section-item-3-icon-3">+</span>
+							LOMVUM
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-3-container">
+				<div class="first-section-item-3-header">
+					<span>
+						<img src="../../src/assets/icons/category.svg" alt="">
+						دسته بندی
+					</span>
+					<img src="../../src/assets/icons/arrow-down.svg" alt="" class="first-section-item-3-icon-2"
+						 data-bs-toggle="collapse" aria-expanded="false"
+						 aria-controls="category-3" data-bs-target="#category-3"/>
+				</div>
+				<div class="first-section-item-3-collapse collapse" id="category-3">
+					<ul>
+						<li>
+							<i class="fas fa-solid fa-square"></i>
+							مینـا کـاری
+						</li>
+						<li>
+							<i class="fas fa-solid fa-square"></i>
+							مینـا کـاری
+						</li>
+						<li>
+							<i class="fas fa-solid fa-square"></i>
+							مینـا کـاری
+						</li>
+					</ul>
+					<div class="first-section-item-3-container-2">
+						<button class="first-section-item-3-button">
+							<span class="first-section-item-3-icon-3">+</span>
+							مینـا کـاری
+						</button>
+						<button class="first-section-item-3-button">
+							<span class="first-section-item-3-icon-3">+</span>
+							مینـا کـاری
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-3-container">
+				<div class="first-section-item-3-header">
+					<span>
+						<img src="../../src/assets/icons/category.svg" alt="">
+						دسته بندی
+					</span>
+					<img src="../../src/assets/icons/arrow-down.svg" alt="" class="first-section-item-3-icon-2"
+						 data-bs-toggle="collapse" aria-expanded="false"
+						 aria-controls="category-4" data-bs-target="#category-4"/>
+				</div>
+				<div class="first-section-item-3-collapse collapse" id="category-4">
+					<ul>
+						<li>
+							<i class="fas fa-solid fa-square"></i>
+							مینـا کـاری
+						</li>
+						<li>
+							<i class="fas fa-solid fa-square"></i>
+							مینـا کـاری
+						</li>
+						<li>
+							<i class="fas fa-solid fa-square"></i>
+							مینـا کـاری
+						</li>
+					</ul>
+					<div class="first-section-item-3-container-2">
+						<button class="first-section-item-3-button">
+							<span class="first-section-item-3-icon-3">+</span>
+							مینـا کـاری
+						</button>
+						<button class="first-section-item-3-button">
+							<span class="first-section-item-3-icon-3">+</span>
+							مینـا کـاری
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="first-section-container-7">
+			<div class="first-section-container-8">
+				<span class="first-section-title-2">محصولات</span>
+				<span class="first-section-span-6">جدید ترین محصولات دسته بندی</span>
+			</div>
+			<div class="first-section-container-9">
+				<img src="../../src/assets/icons/setting-4.svg" alt="">
+				<img src="../../src/assets/icons/category.svg" alt="">
+			</div>
+		</div>
+		<div class="first-section-container-2 row gx-3 gx-lg-4">
+			<div class="first-section-container-3 col-12">
+				<div class="first-section-container-6">
+					<span class="first-section-title-1">محصولات</span>
+					<img src="../../src/assets/icons/setting-4.svg" alt=""/>
+				</div>
+				<span class="first-section-span-1">جدید ترین محصولات دسته بندی</span>
+			</div>
+			<div class="first-section-container-11">
+				<div class="dashed-line mobile"></div>
+				<div class="dashed-line"></div>
+				<div class="dashed-line"></div>
+				<div class="dashed-line"></div>
+				<div class="dashed-line"></div>
+				<div class="dashed-line"></div>
+			</div>
+			<div class="first-section-container-12">
+				<img src="../../src/assets/images/image7.png">
+				<img src="../../src/assets/images/image7.png">
+				<img src="../../src/assets/images/image7.png">
+				<img src="../../src/assets/images/image7.png">
+				<img src="../../src/assets/images/image7.png">
+				<img src="../../src/assets/images/image7.png">
+				<img src="../../src/assets/images/image7.png">
+				<img src="../../src/assets/images/image7.png">
+			</div>
+			<div class="first-section-item-container-1 col-xs-6 col-3 col-lg-4 col-xl-3">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/image2.png"
+							 alt=""/>
+						<img class="global-1-item-image-2" src="../../src/assets/icons/heart.svg"/>
+						<img class="global-1-item-image-3" src="../../src/assets/icons/archive-tick.svg"/>
+					</div>
+					<span class="first-section-item-span-3">میـوه خـوری فیـروز کـاری</span>
+					<div class="global-1-item-container-4">
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+						<span class="first-section-item-span-1">
+							<span class="first-section-item-span-2">
+							تومان
+						</span>
+							250,000
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-container-1 col-xs-6 col-3 col-lg-4 col-xl-3">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/image2.png"
+							 alt=""/>
+						<img class="global-1-item-image-2" src="../../src/assets/icons/heart.svg"/>
+						<img class="global-1-item-image-3" src="../../src/assets/icons/archive-tick.svg"/>
+					</div>
+					<span class="first-section-item-span-3">میـوه خـوری فیـروز کـاری</span>
+					<div class="global-1-item-container-4">
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+						<span class="first-section-item-span-1">
+							<span class="first-section-item-span-2">
+							تومان
+						</span>
+							250,000
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-container-1 col-xs-6 col-3 col-lg-4 col-xl-3">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/image2.png"
+							 alt=""/>
+						<img class="global-1-item-image-2" src="../../src/assets/icons/heart.svg"/>
+						<img class="global-1-item-image-3" src="../../src/assets/icons/archive-tick.svg"/>
+					</div>
+					<span class="first-section-item-span-3">میـوه خـوری فیـروز کـاری</span>
+					<div class="global-1-item-container-4">
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+						<span class="first-section-item-span-1">
+							<span class="first-section-item-span-2">
+							تومان
+						</span>
+							250,000
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-container-1 col-xs-6 col-3 col-lg-4 col-xl-3">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/image2.png"
+							 alt=""/>
+						<img class="global-1-item-image-2" src="../../src/assets/icons/heart.svg"/>
+						<img class="global-1-item-image-3" src="../../src/assets/icons/archive-tick.svg"/>
+					</div>
+					<span class="first-section-item-span-3">میـوه خـوری فیـروز کـاری</span>
+					<div class="global-1-item-container-4">
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+						<span class="first-section-item-span-1">
+							<span class="first-section-item-span-2">
+							تومان
+						</span>
+							250,000
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-container-1 col-xs-6 col-3 col-lg-4 col-xl-3">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/image2.png"
+							 alt=""/>
+						<img class="global-1-item-image-2" src="../../src/assets/icons/heart.svg"/>
+						<img class="global-1-item-image-3" src="../../src/assets/icons/archive-tick.svg"/>
+					</div>
+					<span class="first-section-item-span-3">میـوه خـوری فیـروز کـاری</span>
+					<div class="global-1-item-container-4">
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+						<span class="first-section-item-span-1">
+							<span class="first-section-item-span-2">
+							تومان
+						</span>
+							250,000
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-container-1 col-xs-6 col-3 col-lg-4 col-xl-3">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/image2.png"
+							 alt=""/>
+						<img class="global-1-item-image-2" src="../../src/assets/icons/heart.svg"/>
+						<img class="global-1-item-image-3" src="../../src/assets/icons/archive-tick.svg"/>
+					</div>
+					<span class="first-section-item-span-3">میـوه خـوری فیـروز کـاری</span>
+					<div class="global-1-item-container-4">
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+						<span class="first-section-item-span-1">
+							<span class="first-section-item-span-2">
+							تومان
+						</span>
+							250,000
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-container-1 d-xs-none d-sm-block col-xs-6 col-3 col-lg-4 col-xl-3">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/image2.png"
+							 alt=""/>
+						<img class="global-1-item-image-2" src="../../src/assets/icons/heart.svg"/>
+						<img class="global-1-item-image-3" src="../../src/assets/icons/archive-tick.svg"/>
+					</div>
+					<span class="first-section-item-span-3">میـوه خـوری فیـروز کـاری</span>
+					<div class="global-1-item-container-4">
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+						<span class="first-section-item-span-1">
+							<span class="first-section-item-span-2">
+							تومان
+						</span>
+							250,000
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-container-1 d-xs-none d-sm-block col-xs-6 col-3 col-lg-4 col-xl-3">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/image2.png"
+							 alt=""/>
+						<img class="global-1-item-image-2" src="../../src/assets/icons/heart.svg"/>
+						<img class="global-1-item-image-3" src="../../src/assets/icons/archive-tick.svg"/>
+					</div>
+					<span class="first-section-item-span-3">میـوه خـوری فیـروز کـاری</span>
+					<div class="global-1-item-container-4">
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+						<span class="first-section-item-span-1">
+							<span class="first-section-item-span-2">
+							تومان
+						</span>
+							250,000
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-container-1 d-xs-none d-sm-block col-xs-6 col-3 col-lg-4 col-xl-3">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/image2.png"
+							 alt=""/>
+						<img class="global-1-item-image-2" src="../../src/assets/icons/heart.svg"/>
+						<img class="global-1-item-image-3" src="../../src/assets/icons/archive-tick.svg"/>
+					</div>
+					<span class="first-section-item-span-3">میـوه خـوری فیـروز کـاری</span>
+					<div class="global-1-item-container-4">
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+						<span class="first-section-item-span-1">
+							<span class="first-section-item-span-2">
+							تومان
+						</span>
+							250,000
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-container-1 d-xs-none d-sm-block col-xs-6 col-3 col-lg-4 col-xl-3">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/image2.png"
+							 alt=""/>
+						<img class="global-1-item-image-2" src="../../src/assets/icons/heart.svg"/>
+						<img class="global-1-item-image-3" src="../../src/assets/icons/archive-tick.svg"/>
+					</div>
+					<span class="first-section-item-span-3">میـوه خـوری فیـروز کـاری</span>
+					<div class="global-1-item-container-4">
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+						<span class="first-section-item-span-1">
+							<span class="first-section-item-span-2">
+							تومان
+						</span>
+							250,000
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-container-1 d-xs-none d-sm-block col-xs-6 col-3 col-lg-4 col-xl-3">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/image2.png"
+							 alt=""/>
+						<img class="global-1-item-image-2" src="../../src/assets/icons/heart.svg"/>
+						<img class="global-1-item-image-3" src="../../src/assets/icons/archive-tick.svg"/>
+					</div>
+					<span class="first-section-item-span-3">میـوه خـوری فیـروز کـاری</span>
+					<div class="global-1-item-container-4">
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+						<span class="first-section-item-span-1">
+							<span class="first-section-item-span-2">
+							تومان
+						</span>
+							250,000
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-container-1 d-xs-none d-sm-block col-xs-6 col-3 col-lg-4 col-xl-3">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/image2.png"
+							 alt=""/>
+						<img class="global-1-item-image-2" src="../../src/assets/icons/heart.svg"/>
+						<img class="global-1-item-image-3" src="../../src/assets/icons/archive-tick.svg"/>
+					</div>
+					<span class="first-section-item-span-3">میـوه خـوری فیـروز کـاری</span>
+					<div class="global-1-item-container-4">
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+						<span class="first-section-item-span-1">
+							<span class="first-section-item-span-2">
+							تومان
+						</span>
+							250,000
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-container-1 d-xs-none d-sm-block d-lg-none col-xs-6 col-3 col-lg-4 col-xl-3">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/image2.png"
+							 alt=""/>
+						<img class="global-1-item-image-2" src="../../src/assets/icons/heart.svg"/>
+						<img class="global-1-item-image-3" src="../../src/assets/icons/archive-tick.svg"/>
+					</div>
+					<span class="first-section-item-span-3">میـوه خـوری فیـروز کـاری</span>
+					<div class="global-1-item-container-4">
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+						<span class="first-section-item-span-1">
+							<span class="first-section-item-span-2">
+							تومان
+						</span>
+							250,000
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-container-1 d-xs-none d-sm-block d-lg-none col-xs-6 col-3 col-lg-4 col-xl-3">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/image2.png"
+							 alt=""/>
+						<img class="global-1-item-image-2" src="../../src/assets/icons/heart.svg"/>
+						<img class="global-1-item-image-3" src="../../src/assets/icons/archive-tick.svg"/>
+					</div>
+					<span class="first-section-item-span-3">میـوه خـوری فیـروز کـاری</span>
+					<div class="global-1-item-container-4">
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+						<span class="first-section-item-span-1">
+							<span class="first-section-item-span-2">
+							تومان
+						</span>
+							250,000
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-container-1 d-xs-none d-sm-block d-lg-none col-xs-6 col-3 col-lg-4 col-xl-3">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/image2.png"
+							 alt=""/>
+						<img class="global-1-item-image-2" src="../../src/assets/icons/heart.svg"/>
+						<img class="global-1-item-image-3" src="../../src/assets/icons/archive-tick.svg"/>
+					</div>
+					<span class="first-section-item-span-3">میـوه خـوری فیـروز کـاری</span>
+					<div class="global-1-item-container-4">
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+						<span class="first-section-item-span-1">
+							<span class="first-section-item-span-2">
+							تومان
+						</span>
+							250,000
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="first-section-container-4">
+			<div class="first-section-container-5">
+				<span class="first-section-span-2">
+					<img style="transform: rotate(-180deg);" src="../../src/assets/icons/arrow-right.svg" alt="">
+				</span>
+				<span class="first-section-span-3">9</span>
+				<span class="first-section-span-3">3</span>
+				<span class="first-section-span-3 first-section-span-active">2</span>
+				<span class="first-section-span-3">1</span>
+				<span class="first-section-span-2">
+					<img src="../../src/assets/icons/arrow-right.svg" alt="">
+				</span>
+			</div>
+		</div>
+	</section>
+	<section class="second-section">
+		<div class="second-section-container-1">
+			<span class="second-section-title-1">
+				توضیحـات کامـل دستـه بنـدی
+			</span>
+			<p class="second-section-paragraph-1">
+				افزارها شناختخصوص طراحان خلاقع با هدف بهبود ابزارهای کاربررصد گذشته حال و آینده، شناخت فراوان جامع طلبرم
+				ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+				بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلــــــی
+			</p>
+		</div>
+		<div class="second-section-container-2">
+			<span class="second-section-title-2">
+			مشخصـات
+			</span>
+			<ul class="second-section-ul">
+				<li>
+					<i class="fas fa-solid fa-circle"></i>
+					فیـروزه کوبـی
+				</li>
+				<li>
+					<i class="fas fa-solid fa-circle"></i>
+					فیـروزه کوبـی
+				</li>
+				<li>
+					<i class="fas fa-solid fa-circle"></i>
+					فیـروزه کوبـی
+				</li>
+				<li>
+					<i class="fas fa-solid fa-circle"></i>
+					فیـروزه کوبـی
+				</li>
+			</ul>
+		</div>
+	</section>
+</main>
+<footer>
+	<div class="footer-container-1">
+		<span class="footer-title-1">
+			با خیال راحت خرید کنید
+		</span>
+		<div class="footer-container-2">
+			<div class="footer-item-1-container-1">
+				<img class="footer-item-1-icon" src="../../src/assets/icons/card-pos.svg" alt="">
+				<div class="footer-item-1-container-2">
+					<span class="footer-item-1-span-1">
+						روش پرداخت
+					</span>
+					<span class="footer-item-1-span-2">
+						کلیه کارت های شتاب
+					</span>
+				</div>
+			</div>
+			<div class="footer-item-1-container-1">
+				<img class="footer-item-1-icon" src="../../src/assets/icons/box-tick.svg" alt="">
+				<div class="footer-item-1-container-2">
+					<span class="footer-item-1-span-1">
+						پست رایگان
+					</span>
+					<span class="footer-item-1-span-2">
+						خرید بالای 100 هزار تومان
+					</span>
+				</div>
+			</div>
+			<div class="footer-item-1-container-1">
+				<img class="footer-item-1-icon" src="../../src/assets/icons/box-tick.svg" alt="">
+				<div class="footer-item-1-container-2">
+					<span class="footer-item-1-span-1">
+						پست رایگان
+					</span>
+					<span class="footer-item-1-span-2">
+						خرید بالای 100 هزار تومان
+					</span>
+				</div>
+			</div>
+			<div class="footer-item-1-container-1">
+				<img class="footer-item-1-icon" src="../../src/assets/icons/card-pos.svg" alt="">
+				<div class="footer-item-1-container-2">
+					<span class="footer-item-1-span-1">
+						روش پرداخت
+					</span>
+					<span class="footer-item-1-span-2">
+						کلیه کارت های شتاب
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-container-3">
+		<div class="footer-container-4">
+			<div class="footer-container-5">
+				<img class="footer-image-1" src="../../src/assets/images/image6.png" alt=""/>
+				<div class="footer-container-6">
+					<span class="footer-title-2">
+						مینـا هنـر
+					</span>
+					<span class="footer-title-3">
+					بزرگترین شرکت صنایع دستی در خاورمیانه
+					</span>
+				</div>
+			</div>
+			<div class="footer-container-7">
+				<span class="footer-span-1">
+				شیراز بعد از پل صنایع، شهرک باهنر کوچه 32 فروشگاه بزرگ مینا هنر
+				</span>
+				<span class="footer-span-2">
+					تلفن تماس
+					<span dir="auto" class="footer-span-3">
+						0713 421 2233 - 0917 123 4566
+					</span>
+				</span>
+			</div>
+		</div>
+		<div class="footer-line-1"></div>
+		<div class="footer-container-8">
+			<div class="footer-container-9">
+				<div class="footer-item-2-container-1">
+					<span class="footer-item-2-title">
+						دسترسی سریع
+					</span>
+					<ul class="footer-item-2-ul">
+						<li class="footer-item-2-li">
+							تماس با ما
+						</li>
+						<li class="footer-item-2-li">
+							راهنمای خرید
+						</li>
+						<li class="footer-item-2-li">
+							پیگیری سفارش
+						</li>
+					</ul>
+				</div>
+				<div class="footer-item-2-container-1">
+					<span class="footer-item-2-title">
+						پرسش و پاسخ
+					</span>
+					<ul class="footer-item-2-ul">
+						<li class="footer-item-2-li">
+							تماس با ما
+						</li>
+						<li class="footer-item-2-li">
+							راهنمای خرید
+						</li>
+						<li class="footer-item-2-li">
+							پیگیری سفارش
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-line-1"></div>
+			<div class="footer-container-10">
+				<span class="footer-title-4">مجوز ها</span>
+				<span class="footer-span-4">نماد اعتماد و مجوز صنعت معدن</span>
+				<img class="footer-image-2" src="../../src/assets/images/image8.png" alt="">
+				<img class="footer-image-2" src="../../src/assets/images/image15.png" alt="">
+				<img class="footer-image-2" src="../../src/assets/images/image1.png" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="footer-container-11">
+		تمام حقوق متعلق به شرکت مینا هنر میباشد
+	</div>
+</footer>
+
+<script rel="preload"
+		async
+		src="../../src/utility/breakpoints.js"></script>
+<script rel="preload"
+		async
+		src="script.js"></script>
+<script rel="preload"
+		async
+		src="../../src/js/script.js"></script>
+<script rel="preload"
+		async
+		crossorigin="anonymous"
+		src="https://kit.fontawesome.com/488d7f94e4.js"></script>
+<script rel="preload"
+		async
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
